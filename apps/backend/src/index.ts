@@ -8,6 +8,10 @@ config();
 
 const app = express();
 
+app.use(cors({
+    preflightContinue: true
+}))
+
 app.options("/trpc", cors());
 app.use(express.json());
 
