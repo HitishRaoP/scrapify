@@ -8,17 +8,14 @@ config();
 
 const app = express();
 
-app.use(cors({
-    origin: ["https://scrapify-frontend.vercel.app/", process.env.CORS_ORIGIN!, "http://localhost:3000"],
-}));
-
+app.options("/options", cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Server is up and running");
 })
 
-app.use("/trpc", trpcExpress)
+app.use("/trpc", cors(), trpcExpress)
 
 app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`);
