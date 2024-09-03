@@ -9,17 +9,17 @@ config();
 const app = express();
 
 app.use(cors({
+    origin: "*",
     preflightContinue: true
 }))
 
-app.options("/trpc", cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Server is up and running");
 })
 
-app.use("/trpc", cors(), trpcExpress)
+app.use("/trpc", trpcExpress)
 
 app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`);
