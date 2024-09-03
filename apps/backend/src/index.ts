@@ -8,15 +8,12 @@ config();
 
 const app = express();
 
-app.use(cors({
-    origin: "*",
-    preflightContinue: true
-}))
+app.use(cors())
 
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Server is up and running");
+    res.json({message : "server is up and running"});
 })
 
 app.use("/trpc", trpcExpress)
