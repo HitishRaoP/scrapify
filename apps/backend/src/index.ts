@@ -8,7 +8,7 @@ config();
 
 const app = express();
 
-app.options("/options", cors());
+app.options("/trpc", cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
