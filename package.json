@@ -1,0 +1,27 @@
+{
+  "name": "scrapify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "format": "prettier \"{apps,packages}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:write": "pnpm format --write",
+    "format:check": "pnpm format --check",
+    "validate": "pnpm format:write && pnpm check-types && pnpm lint && pnpm build ",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "turbo": "^2.1.1"
+  },
+  "packageManager": "pnpm@9.9.0"
+}

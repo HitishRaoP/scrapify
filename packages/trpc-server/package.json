@@ -1,0 +1,25 @@
+{
+  "name": "@scrapify/trpc-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "lint" : "eslint .",
+    "check-types" : "tsc --pretty --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@scrapify/forms": "workspace:^",
+    "@scrapify/scrapers": "workspace:^",
+    "@scrapify/types": "workspace:^",
+    "@trpc/server": "^10.45.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
+  }
+}

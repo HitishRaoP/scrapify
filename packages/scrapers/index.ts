@@ -1,0 +1,1 @@
+export { getQueryUrl, getProducts } from "./src/amazon"

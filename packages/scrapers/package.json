@@ -1,0 +1,25 @@
+{
+  "name": "@scrapify/scrapers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "lint" : "eslint .",
+    "check-types" : "tsc --pretty --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@scrapify/types": "workspace:^",
+    "axios": "^1.7.7",
+    "jsdom": "^25.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/jsdom": "^21.1.7",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
+  }
+}
