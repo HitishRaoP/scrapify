@@ -7,8 +7,12 @@ import { trpcExpress } from "@scrapify/trpc-server";
 config();
 
 const app = express();
+
+app.use(cors({
+    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+}));
+
 app.use(express.json());
-app.use(cors());
 
 app.get("/", (req, res) => {
     res.send("Server is up and running");
