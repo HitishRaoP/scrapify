@@ -2,7 +2,7 @@ import { config } from "dotenv";
 import cors from "cors";
 import express from "express";
 import { PORT } from "./constants";
-import { trpcExpress } from "@scrapify/trpc-server/src/index";
+import { trpcExpress } from "@scrapify/trpc-server";
 
 config();
 

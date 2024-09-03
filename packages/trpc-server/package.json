@@ -2,10 +2,9 @@
   "name": "@scrapify/trpc-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
   "scripts": {
-    "lint" : "eslint .",
-    "check-types" : "tsc --pretty --noEmit"
+    "lint": "eslint .",
+    "check-types": "tsc --pretty --noEmit"
   },
   "keywords": [],
   "author": "",
