@@ -9,7 +9,7 @@ config();
 const app = express();
 
 app.use(cors({
-    origin: [process.env.CORS_ORIGIN!, "http://localhost:3000"],
+    origin: ["https://scrapify-frontend.vercel.app/", process.env.CORS_ORIGIN!, "http://localhost:3000"],
 }));
 
 app.use(express.json());
