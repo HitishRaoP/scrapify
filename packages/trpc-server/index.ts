@@ -1,1 +1,0 @@
-export { trpcExpress } from "./src"

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc --outDir dist",
     "start": "node dist/src/index.js",
     "lint": "eslint .",
     "check-types": "tsc --pretty --noEmit"
