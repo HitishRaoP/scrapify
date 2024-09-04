@@ -21,3 +21,5 @@ app.use("/trpc", cors(), trpcExpress)
 app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`);
 })
+
+export default app

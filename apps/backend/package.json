@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "rm -rf dist && tsc --outDir dist",
-    "start": "node dist/src/index.js",
+    "dev": "tsx watch api/index.ts",
+    "start": "node api/index.ts",
     "lint": "eslint .",
     "check-types": "tsc --pretty --noEmit"
   },
