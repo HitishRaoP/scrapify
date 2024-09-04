@@ -1,9 +1,10 @@
-require("dotenv").config();
+import { config } from "dotenv";
 import cors from "cors";
 import express from "express";
 import { PORT } from "../constants";
 import { trpcExpress } from "@scrapify/trpc-server";
 
+config()
 const app = express();
 
 app.options("/trpc", cors())
