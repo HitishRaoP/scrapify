@@ -1,10 +1,8 @@
-import { config } from "dotenv";
+require("dotenv").config();
 import cors from "cors";
 import express from "express";
-import { PORT } from "./constants";
+import { PORT } from "../constants";
 import { trpcExpress } from "@scrapify/trpc-server";
-
-config();
 
 const app = express();
 
@@ -19,5 +17,7 @@ app.get("/", (req, res) => {
 app.use("/trpc", cors(), trpcExpress)
 
 app.listen(PORT, () => {
-    console.log(`server running on http://localhost:${PORT}`);
+    console.log("server running on http://localhost:${PORT}")
 })
+
+export default app
