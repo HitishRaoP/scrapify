@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch api/index.ts",
     "build": "rm -rf dist && tsc",
-    "start": "node api/index.ts",
+    "start": "node dist/src/index.js",
     "lint": "eslint .",
     "check-types": "tsc --pretty --noEmit"
   },
