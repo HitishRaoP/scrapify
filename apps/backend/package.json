@@ -2,18 +2,21 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "tsx watch api/index.ts",
-    "start": "node api/index.ts",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
     "lint": "eslint .",
-    "check-types": "tsc --pretty --noEmit"
+    "check-types": "tsc --pretty --noEmit",
+    "vercel-build": "echo building..."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@scrapify/trpc-server": "workspace:^",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
   },
