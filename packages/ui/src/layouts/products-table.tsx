@@ -1,4 +1,3 @@
-"use client"
 import { DataTable } from "../components/data-table"
 import { useColumn } from "@scrapify/hooks"
 import { useSelector } from "react-redux"

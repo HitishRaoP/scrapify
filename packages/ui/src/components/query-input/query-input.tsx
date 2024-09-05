@@ -16,7 +16,7 @@ export const QueryInput = () => {
 
     const handleSubmit = async () => {
         try {
-            const data = await trpc.amazon.products.query({ query: query }); // Await the Promise
+            const data = await trpc.amazon.products.query({ query: query });
             dispatch(setProducts(data));
             toast.success("Products scraped successfully", {
                 style: {
